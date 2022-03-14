@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!--bootstrap css-->
 
         <!--css-->
         <link rel="stylesheet" href="./assets/css/style.css"
@@ -17,16 +15,20 @@
     <!--quiz webpage begins-->
 
     <body>
-        <header>
-            <!--This link will take the user to the Leaderboard page-->
-            <!-- <a href="">Leaderboard</a> -->
-            <button>Leaderboard</button>
-
-            <!--timer-->
-            <div>
-                <p>Time: 60s</p>
+        <header class="container-fluid mb-5">
+          <!-- div for scores link and time -->
+            <div class="row">
+                <!-- View highscores -->
+                <div class="col-6">
+                    <!-- <a href="">View Highscores</a> -->
+                    <button id="view-scores" type="button" class="btn btn-secondary d-inline-block mt-1">View High Scores</button>
+                </div>
+                <!-- Timer -->
+                <div class="col-6">
+                    <p class="d-flex justify-content-end time">Time:75s</p>
+                </div>
             </div>
-        </header>
+    </header>
 
         <!--main content-->
         <main>
@@ -65,15 +67,6 @@
         
         <!--javascript-->
         <script src="./assets/javascript/script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
         
     </body>
     </html>

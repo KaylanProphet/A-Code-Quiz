@@ -204,6 +204,8 @@ function displayScores() {
 function clearScores() {
     localStorage.clear();
     scoreListEl.innerHTML="";
+    location.reload();
+    return false;
 }
 
 // EventListeners
